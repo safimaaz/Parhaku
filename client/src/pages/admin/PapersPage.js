@@ -1,13 +1,11 @@
 import React,{useState} from 'react'
 import Navbar from './Navbar'
+import Papers from './Papers';
 import Sidebar from './Sidebar'
-import Users from './Users';
 
-
-const AdminPageUsers = () => {
-   const [sidebar, setSidebar] = useState('sidebar');
-   const [icon, setIcon] = useState('bx bx-menu sidebarBtn');
-
+const PapersPage = () => {
+  const [sidebar, setSidebar] = useState('sidebar');
+    const [icon, setIcon] = useState('bx bx-menu sidebarBtn');
   return (
     <>
         <Sidebar sidebar={sidebar} />
@@ -15,7 +13,7 @@ const AdminPageUsers = () => {
             <Navbar icon={icon} setIcon={setIcon} setSidebar={setSidebar} />
             <div className='home-content'>
               <div className='sales-boxes' style={{width: '100%'}}>
-                <Users />
+                <Papers />
               </div>
             </div>
         </section>
@@ -23,4 +21,4 @@ const AdminPageUsers = () => {
   )
 }
 
-export default AdminPageUsers
+export default PapersPage

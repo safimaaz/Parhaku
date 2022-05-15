@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 import Navbar from './Navbar'
-import Products from './Products';
+import EBooks from './EBooks';
 import Sidebar from './Sidebar'
 
-const AdminProducts = () => {
+const EBooksPage = () => {
   const [sidebar, setSidebar] = useState('sidebar');
     const [icon, setIcon] = useState('bx bx-menu sidebarBtn');
   return (
@@ -13,7 +13,7 @@ const AdminProducts = () => {
             <Navbar icon={icon} setIcon={setIcon} setSidebar={setSidebar} />
             <div className='home-content'>
               <div className='sales-boxes' style={{width: '100%'}}>
-                <Products />
+                <EBooks />
               </div>
             </div>
         </section>
@@ -21,4 +21,4 @@ const AdminProducts = () => {
   )
 }
 
-export default AdminProducts
+export default EBooksPage
